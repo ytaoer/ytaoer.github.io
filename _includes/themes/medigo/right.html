@@ -1,112 +1,106 @@
 <div class="col-md-4">
-    <div class="sidebar">
-        <div class="sidebar-widget">
-            <h5 class="widget-title">About Me</h5>
-            <div class="col-xs-12">
-                <img src="{{site.url}}/assets/images/head.jpg" style="width: 60%;" class="img-thumbnail">
-            </div>
-            <div class="col-xs-12">
-                <h4>Dendy</h4>
-                <!-- <div style="text-align:center;">
+	<div class="sidebar">
+		<div class="sidebar-widget">
+			<h5 class="widget-title">关于我们</h5>
+			<div class="col-xs-12">
+				<img src="{{site.url}}/assets/images/head.jpg" style="width: 60%;"
+					class="img-thumbnail">
+			</div>
+			<div class="col-xs-12">
+				<h4>樱桃社区</h4>
+				<!-- <div style="text-align:center;">
                     <wb:follow-button uid="1821809482" type="gray_3" width="100%" height="24" ></wb:follow-button>
                 </div> -->
-                <div style="text-align: left;margin-top: 10px;">
-                    <p class="light-text">轻轻地，我走了，正如我轻轻地来！我挥一挥衣袖，不带走一片云彩！</p>
-                </div>
-            </div>
-        </div>
-        <!-- /.sidebar-widget -->
-        <div class="sidebar-widget">
-            <h5 class="widget-title">Categories</h5>
+				<div style="text-align: left;margin-top: 10px;">
+					<p class="light-text">一个奶爸的生活日志！！</p>
+				</div>
+			</div>
+		</div>
+		<!-- /.sidebar-widget -->
+		<div class="sidebar-widget">
+			<h5 class="widget-title">话题</h5>
 
-            <div class="row categories">
-                <div class="col-md-12">
-                    {% assign categories_list = site.data.categories %}
-                    {% for c in categories_list%}
-                    <li>
-                        <a href="/categories/{{c.name}}.html" name="{{ c.name }}">{{c.cn}}
-                            {% if c.name == 'all' %}
-                            ({{site.posts.size}})
-                            {% else %}
-                            {% assign num = 0 %}
-                            {% for category in site.categories %}
-                            {% if {{category[0]}} == {{c.cn}} %}
-                            {% assign num = {{category.last.size}} %}
-                            {% endif %}
-                            {% endfor %}
-                            ({{num}})
-                            {% endif %}
-                        </a>
-                    </li>
-                    {% endfor %}
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.sidebar-widget -->
-        <div class="sidebar-widget">
-            <h5 class="widget-title">Link</h5>
+			<div class="row categories">
+				<div class="col-md-12">
+					{% assign categories_list = site.data.categories %} {% for c in
+					categories_list%}
+					<li><a href="/categories/{{c.name}}.html" name="{{ c.name }}">{{c.cn}}
+							{% if c.name == 'all' %} ({{site.posts.size}}) {% else %} {%
+							assign num = 0 %} {% for category in site.categories %} {% if
+							{{category[0]}} == {{c.cn}} %} {% assign num =
+							{{category.last.size}} %} {% endif %} {% endfor %} ({{num}}) {%
+							endif %} </a></li> {% endfor %}
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.sidebar-widget -->
+		<div class="sidebar-widget">
+			<h5 class="widget-title">友情链接</h5>
 
-            <div class="row categories">
-                <div class="col-md-12">
-                    <li><a target="_blank" href="http://blog.sina.com.cn/superbugs">新浪博客</a><br></li>
-                    <li><a target="_blank" href="http://blog.csdn.net/z_Dendy">CSDN博客</a></li>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
+			<div class="row categories">
+				<div class="col-md-12">
+					<ul>
+						<li><a target="_blank" href="https://baby.jd.com/">京东商城</a>
+						</li>
+						<li><a target="_blank" href="http://www.mia.com/">蜜芽</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
 
-        <div class="sidebar-widget">
-            <h5 class="widget-title">Recent Posts</h5>
+		<div class="sidebar-widget">
+			<h5 class="widget-title">最近发布</h5>
 
-            {% for page in site.related_posts %}
-            <div class="last-post clearfix">
-                <div class="thumb pull-left">
-                    <a href="#"><img
-                            src="{{ ASSET_PATH }}/images/includes/blogthumb{{page.title | size | modulo:5}}.jpg" alt=""></a>
-                </div>
-                <div class="content">
-                    <span>{{ page.date | date : '%Y年%m月%-d日' }}</span>
-                    <h6>
-                        <a href="{{ BASE_PATH }}{{page.url}}.html">
-                            {% if page.title_cn %}{{ page.title_cn }}{% else %}{{ page.title }}{% endif %}
-                        </a>
-                    </h6>
-                </div>
-            </div>
-            {% endfor %}
-            <!-- /.last-post -->
-        </div>
-        <!-- /.sidebar-widget -->
+			{% for page in site.related_posts %}
+			<div class="last-post clearfix">
+				<div class="thumb pull-left">
+					<a href="#"><img
+						src="{{ ASSET_PATH }}/images/includes/blogthumb{{page.title | size | modulo:5}}.jpg"
+						alt=""> </a>
+				</div>
+				<div class="content">
+					<span>{{ page.date | date : '%Y年%m月%-d日' }}</span>
+					<h6>
+						<a href="{{ BASE_PATH }}{{page.url}}.html"> {% if
+							page.title_cn %}{{ page.title_cn }}{% else %}{{ page.title }}{%
+							endif %} </a>
+					</h6>
+				</div>
+			</div>
+			{% endfor %}
+			<!-- /.last-post -->
+		</div>
+		<!-- /.sidebar-widget -->
 
 		<!-- /.sidebar-widget -->
-        <div class="sidebar-widget">
-            <h5 class="widget-title">Archives</h5>
-            <div class="row categories">
-                <div class="col-md-12">
-	                {% assign posts_collate = site.posts %}
-					{% include JB/posts_collate %}
-	            </div>
-            </div>
-        </div>
-        <!-- /.sidebar-widget -->
+		<div class="sidebar-widget">
+			<h5 class="widget-title">时间轴</h5>
+			<div class="row categories">
+				<div class="col-md-12">{% assign posts_collate = site.posts %}
+					{% include JB/posts_collate %}</div>
+			</div>
+		</div>
+		<!-- /.sidebar-widget -->
 
-        <!-- /.sidebar-widget -->
-        <div class="sidebar-widget">
-            <h5 class="widget-title">Tags</h5>
-            <div class="tag-items" style="margin-top: 0px;">
-                {% assign tags_list = site.tags %}
-                {% include custom/tags_list %}
-            </div>
-        </div>
-        <!-- /.sidebar-widget -->
+		<!-- /.sidebar-widget -->
+		<div class="sidebar-widget">
+			<h5 class="widget-title">标签</h5>
+			<div class="tag-items" style="margin-top: 0px;">{% assign
+				tags_list = site.tags %} {% include custom/tags_list %}</div>
+		</div>
+		<!-- /.sidebar-widget -->
 
-        <div class="sidebar-widget">
-            <h5 class="widget-title">Weibo</h5>
-            <div class="tag-items" style="margin-top: 0px;">
-                <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=3&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1821809482&verifier=02959ff0&dpc=1"></iframe>
-            </div>
-        </div>
-    </div>
-    <!-- /.sidebar -->
+		<div class="sidebar-widget">
+			<h5 class="widget-title">微博</h5>
+			<div class="tag-items" style="margin-top: 0px;">
+				<iframe width="100%" height="550" class="share_self" frameborder="0"
+					scrolling="no"
+					src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=3&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1821809482&verifier=02959ff0&dpc=1"></iframe>
+			</div>
+		</div>
+	</div>
+	<!-- /.sidebar -->
 </div>
