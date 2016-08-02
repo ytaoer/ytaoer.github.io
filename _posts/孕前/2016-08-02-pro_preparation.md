@@ -1,8 +1,8 @@
 ---
 layout: post
-category : 怀孕
+category : 孕前
 tagline: 
-tags : [孕前]
+tags : [怀孕]
 excerpt : 
 title_cn: 准备怀孕前注意什么？ 
 description:  准备怀孕前注意事情，这里一定要看看，避免孩子出生的时候受到影响，发育不正常，脑瘫什么的
