@@ -25,12 +25,12 @@
                         <div class="main-navigation pull-right">
                               <nav class="main-nav visible-md visible-lg">
                                     <ul class="sf-menu">
-                                          <li class="{% if page.title == 'Home' %} active {% endif %}"><a href="/index.html">首页</a></li>
+                                          <li class="{% if page.title == '首页' %} active {% endif %}"><a href="/index.html">首页</a></li>
                                           <!--<li><a href="#">Portfolio</a></li>-->
                                           <!-- 添加分页后，index。html -->
-                                          <li class="{% if page.title == 'Blog' or (page.title != 'Home' and page.title != 'Concat' and page.title != 'About') %} active {% endif %}"><a href="/blog/index.html">博客</a></li>
-                                          <li class="{% if page.title == 'About' %} active {% endif %}"><a href="/about.html">关于我们</a></li>
-                                          <li class="{% if page.title == 'Concat' %} active {% endif %}"><a href="/concat.html">联系我们</a></li>
+                                          <li class="{% if page.title == '博客' or (page.title != '首页' and page.title != '联系我们' and page.title != '关于我们') %} active {% endif %}"><a href="/blog/index.html">博客</a></li>
+                                          <li class="{% if page.title == '关于我们' %} active {% endif %}"><a href="/about.html">关于我们</a></li>
+                                          <li class="{% if page.title == '联系我们' %} active {% endif %}"><a href="/concat.html">联系我们</a></li>
                                     </ul>
                                     <!-- /.sf-menu -->
                               </nav>
