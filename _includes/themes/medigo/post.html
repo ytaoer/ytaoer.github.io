@@ -69,39 +69,41 @@
                                 {% assign tags_list = page.tags %}
                                 {% include JB/tags_list %}
                             </div>
-                             <div class ="post-donate">
-      <div id="donate_board" class="donate_bar center">
-        <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
-        <span class="donate_txt">
-           &uarr;<br>
-           Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！您的打赏将捐献给<a href="http://gongyi.qq.com/">腾讯公益</a>
-           {% endif %}          
-        </span>
-        <br>
-      </div>  
-  
-    <!-- 支付宝打赏图案 -->
-      <div id="donate_guide" class="donate_bar center hidden">
-          <a href="/assets/themes/medigo/images/alipay.jpg" title="支付宝打赏" class="fancybox" rel="article0"       style="float:left;margin-left:25%;margin-right:2px;">
-          <img src="/assets/themes/medigo/images/alipay.jpg" title="支付宝打赏" height="164px" width="164px">
-          </a> 
-      </div>
+								<div class="post-donate">
+									<div id="donate_board" class="donate_bar center">
+										<a id="btn_donate" class="btn_donate" href="javascript:;"
+											title="Donate 打赏"></a> <span class="donate_txt">
+											&uarr;<br> Enjoy it ? Donate me ! 欣赏此文？求鼓励，求支持！您的打赏将捐献给<a
+											href="http://gongyi.qq.com/">腾讯公益</a></span> <br>
+									</div>
 
-    <!-- 微信打赏图案 -->
-      <div id="donate_guide" class="donate_bar center hidden">
-          <a href="/assets/themes/medigo/images/wechatpay.jpg" title="微信打赏" class="fancybox" rel="article0"  >
-          <img src="http://static.ixirong.com/pic/donate/wechatpay.jpg" title="微信打赏" height="164px" width="164px">
-          </a> 
-      </div>
-  
-      <script type="text/javascript">
-        document.getElementById('btn_donate').onclick = function(){
-          $('#donate_board').addClass('hidden');
-          $('#donate_guide').removeClass('hidden');
-        }
-      </script>
-    </div>
-                            <h2>免责声明</h2>
+									<!-- 支付宝打赏图案 -->
+									<div id="donate_guide" class="donate_bar center hidden">
+										<a href="/assets/themes/medigo/images/alipay.jpg"
+											title="支付宝打赏" class="fancybox" rel="article0"
+											style="float:left;margin-left:25%;margin-right:2px;"> <img
+											src="/assets/themes/medigo/images/alipay.jpg" title="支付宝打赏"
+											height="164px" width="164px"> </a>
+									</div>
+
+									<!-- 微信打赏图案 -->
+									<div id="donate_guide" class="donate_bar center hidden">
+										<a href="/assets/themes/medigo/images/wechatpay.jpg"
+											title="微信打赏" class="fancybox" rel="article0"> <img
+											src="http://static.ixirong.com/pic/donate/wechatpay.jpg"
+											title="微信打赏" height="164px" width="164px"> </a>
+									</div>
+
+									<script type="text/javascript">
+										document.getElementById('btn_donate').onclick = function() {
+											$('#donate_board').addClass(
+													'hidden');
+											$('#donate_guide').removeClass(
+													'hidden');
+										}
+									</script>
+								</div>
+								<h2>免责声明</h2>
                             <div> 本网站并非专业教育和医疗机构，本网站所提供一切资料仅供参考，不能作为诊断、医疗和教育之依据。如果您发现孩子有任何异常，请及时去专业机构检查。 对于任何单位，本网均不提供其资信担保，由此发生的责权关系与本网无关。</div>
                         </div>
                         
