@@ -1,10 +1,10 @@
 permalink: /:categories/:year/:month/:day/:title 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
-title : 婴淘社区
+title : 婴淘博客
 tagline: Site Tagline
 author :
-  name : 婴淘社区
+  name : 婴淘博客
   email : kf@ytaoer.com
   github : https://github.com/ytaoer
   twitter : 

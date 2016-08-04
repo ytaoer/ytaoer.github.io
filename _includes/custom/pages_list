@@ -31,11 +31,11 @@
     {% for page in paginator.posts %}
         {% if page.title != null %}
             <div class="post-blog">
-                <div class="blog-image">
+            <!--    <div class="blog-image">
                     <a href="{{ BASE_PATH }}{{page.url}}.html">
                         <img src="/assets/themes/medigo/images/includes/blog{{page.title | size | modulo:5}}.jpg" alt="">
                     </a>
-                </div>
+                </div>-->
                 <!-- /.blog-image -->
                 <div class="blog-content">
                     <span class="meta-date"><a href="#">{{ page.date | date : '%Y年%m月%-d日' }}</a></span>
@@ -72,11 +72,11 @@
     {% for page in pages_list %}
         {% if page.title != null %}
             <div class="post-blog">
-                <div class="blog-image">
+            <!--    <div class="blog-image">
                     <a href="{{ BASE_PATH }}{{page.url}}.html">
                         <img src="/assets/themes/medigo/images/includes/blog{{page.title | size | modulo:5}}.jpg" alt="">
                     </a>
-                </div>
+                </div> -->
                 <!-- /.blog-image -->
                 <div class="blog-content">
                     <span class="meta-date"><a href="#">{{ page.date | date : '%Y年%m月%-d日' }}</a></span>
