@@ -12,7 +12,7 @@ author :
   weibo: http://weibo.com/ytaoer # 微博地址
   qq: 674613438
 
-production_url : http://ytaoer.github.io
+production_url : http://blog.ytaoer.com
 
 
 JB :
@@ -71,7 +71,8 @@ JB :
       provider : "custom"
   posts_collate:
     provider: "custom"
-
+    
 gems: [jekyll-paginate]
 paginate: 10
 paginate_path: "/blog/page:num/"
+encoding: "utf-8"
