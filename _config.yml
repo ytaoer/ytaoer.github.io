@@ -1,18 +1,32 @@
-permalink: /:categories/:year/:month/:day/:title 
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "/blog/page:num/"
+encoding: "utf-8"
+permalink: /:categories/:year/:month/:day/:title.html
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
-title : 杨桃儿的博客
 tagline: Site Tagline
+blog :
+  title: 杨桃儿的博客  # 网页标题
+  name: Ytaoer Blog # 博客名称
+  description: 专注所以专业 # 博客描述
+  url: http://ytaoer.com # 博客地址
+  duoshuo: liangyangtao  # 多说ID
+  tongji: 47b228aed7a3fbabcebe22b7a5a06345 # 百度统计
+  qiniu: # 七牛云地址
+  miitbeian: 京ICP备16045559号  # 备案号
+  
+  
 author :
   name : 杨桃儿
   email : kf@ytaoer.com
-  github : https://github.com/ytaoer
+  github : https://github.com/liangyangtao
   twitter : 
   feedburner : 
-  weibo: http://weibo.com/ytaoer # 微博地址
+  weibo: http://weibo.com/2478993465 # 微博地址
   qq: 674613438
 
-production_url : http://blog.ytaoer.com
+production_url : http://www.ytaoer.com
 
 
 JB :
@@ -72,7 +86,4 @@ JB :
   posts_collate:
     provider: "custom"
     
-gems: [jekyll-paginate]
-paginate: 10
-paginate_path: "/blog/page:num/"
-encoding: "utf-8"
+

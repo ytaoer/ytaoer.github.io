@@ -4,19 +4,13 @@
 			<div class="col-md-12">
 				<nav class="footer-nav clearfix">
 					<ul class="footer-menu">
-						<li><a href="/index.html">首页</a>
-						</li>
-						<!--<li><a href="#">Portfolio</a></li>-->
-						<li><a href="/blog/index.html">博客</a>
-						</li>
-						<!--<li><a href="#">Shortcodes</a></li>-->
-						<li><a href="/concat.html">联系我们</a>
-						</li>
+						<li><a href="/index.html">首页</a></li>
+						<li><a href="/blog/index.html">博客</a></li>
+						<li><a href="/concat.html">联系我们</a></li>
 					</ul>
 					<ul class="sn" style="text-align: center; margin-top: 30px;">
-						<li><a href="http://weibo.com/ytaoer" target="_blank"
-							title="新浪微博"><span class="icon-img weibo"></span> </a>
-						</li>
+						<li><a href="http://open.weibo.com/" target="_blank"
+							title="微博"><span class="icon-img weibo"></span> </a></li>
 					</ul>
 					<!-- /.footer-menu -->
 				</nav>
@@ -30,7 +24,7 @@
 				<p class="copyright-text">
 					Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name
 					}} ||<a href="http://www.miitbeian.gov.cn/" target="_blank"
-						title="备案">京ICP备16045559号 </a>
+						title="备案">{{ site.blog.miitbeian}} </a>
 				</p>
 			</div>
 			<!-- /.col-md-12 -->
@@ -50,29 +44,15 @@
 <!-- Templatemo Script -->
 
 <script>
+	/* 百度统计 */
 	var _hmt = _hmt || [];
 	(function() {
 		var hm = document.createElement("script");
-		hm.src = "//hm.baidu.com/hm.js?b6c436f3762a2d2543d86d7de4beb932";
+		hm.src = "//hm.baidu.com/hm.js?{{ site.blog.tongji }}";
 		var s = document.getElementsByTagName("script")[0];
 		s.parentNode.insertBefore(hm, s);
 	})();
-
-	// 多说公共JS代码 start (一个网页只需插入一次)
-	var duoshuoQuery = {
-		short_name : "liangyangtao"
-	};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';
-		ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:')
-				+ '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] || document
-				.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-
+	/* 百度统计结束 */
 	$(document).ready(
 			function() {
 				$("h2,h3,h4,h5,h6", ".blog-posts").each(
