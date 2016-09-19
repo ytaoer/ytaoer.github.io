@@ -13,7 +13,7 @@ blog :
   url: http://ytaoer.com # 博客地址
   duoshuo: liangyangtao  # 多说ID
   tongji: 47b228aed7a3fbabcebe22b7a5a06345 # 百度统计
-  qiniu: # 七牛云地址
+  qiniu: http://obdna1jlc.bkt.clouddn.com
   miitbeian: 京ICP备16045559号  # 备案号
   
   
